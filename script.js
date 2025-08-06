@@ -8,7 +8,7 @@ document.getElementById('askBtn').addEventListener('click', async function() {
   responseDiv.textContent = "Loading...";
 
   // Your Streamlit API endpoint
-  const apiUrl = "http://localhost:8501/?input=" + encodeURIComponent(question);
+  const apiUrl = "https://agri-rag-system-ry65qtqwszaamageffreuw.streamlit.app/?input=" + encodeURIComponent(question);
 
   try {
     const res = await fetch(apiUrl, {
